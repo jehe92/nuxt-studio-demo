@@ -4,6 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev-tunnel": "nuxt dev --tunnel",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "deploy:dev": "npm run generate && rsync -criv .output/public/ web59@web.incognito.ms:/web/test-studio/ --exclude-from='.deploy.ignore' --delete"
