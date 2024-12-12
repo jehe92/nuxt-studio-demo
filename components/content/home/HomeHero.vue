@@ -6,14 +6,14 @@
         <slot name="headline"></slot>
       </div>
       <!-- title -->
-      <h1 class="font-bold leading-none text-white">
+      <h1 class="font-bold leading-tight text-white">
         <ContentSlot
           name="title"
           unwrap="p" />
       </h1>
     </div>
     <!-- description -->
-    <div class="text-md text-white">
+    <div class="text-editor text-md !text-white">
       <ContentSlot
         name="description"
         unwrap="p" />

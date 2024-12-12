@@ -16,11 +16,16 @@
       <!-- article list -->
       <div class="grid grid-cols-3 gap-4">
         <nuxt-link
-          class="col-span-1 bg-gray-200 p-3"
+          class="col-span-1 bg-gray-200 p-3 text-content-text"
           v-for="article in articles"
           :key="article.id"
           :to="article._path">
-          <div class="text-md font-bold">{{ article.title }}</div>
+          <div class="mb-4 h-[200px] w-full">
+            <img
+              :src="article.image.src"
+              class="h-full w-full object-cover" />
+          </div>
+          <div class="text-lg font-bold">{{ article.title }}</div>
           <div>{{ article.description }}</div>
         </nuxt-link>
       </div>

@@ -73,4 +73,9 @@ export default defineNuxtConfig({
       global.forEach((c) => (c.global = true));
     },
   },
+
+  // nuxt studio config
+  studio: {
+    enabled: true,
+  },
 });
