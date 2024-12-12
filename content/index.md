@@ -1,6 +1,6 @@
 ::home-hero
 #headline
-Startseite
+Subheadline
 
 #title
 This is my :br [Headline]{.text-secondary}
