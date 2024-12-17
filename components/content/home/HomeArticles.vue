@@ -1,6 +1,6 @@
 <template>
   <section class="py-20">
-    <div class="container mx-auto max-w-screen-lg space-y-8">
+    <div class="container mx-auto space-y-8">
       <!-- title -->
       <h2>
         <ContentSlot
