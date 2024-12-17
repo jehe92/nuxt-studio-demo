@@ -1,13 +1,11 @@
 <template>
-  <section class="py-20">
-    <div class="container mx-auto flex w-full flex-col">
-      <div
-        :class="textStyleObject"
-        class="h-full">
-        <ContentSlot unwrap="p" />
-      </div>
+  <div class="flex w-full flex-col">
+    <div
+      :class="textStyleObject"
+      class="h-full">
+      <ContentSlot unwrap="p" />
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
@@ -30,6 +28,15 @@
         return [4, 6, 8, 10, 12, "4", "6", "8", "10", "12"].includes(value);
       },
     },
+    // show text in 2 columns
+    textCols: {
+      type: Number,
+      required: false,
+      default: 1,
+      validator(value) {
+        return [1, 2, "1", "2"].includes(value);
+      },
+    },
   });
 
   const textStyleObject = computed(() => ({
@@ -41,5 +48,6 @@
     "self-start": props.textPosition === "start",
     "self-center": props.textPosition === "center",
     "self-end": props.textPosition === "end",
+    "lg:columns-2 lg:gap-20": props.textCols === 2 || props.textCols === "2",
   }));
 </script>

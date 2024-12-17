@@ -19,6 +19,10 @@ The best tools for creating and editing website content :br come from the powerf
 ::
 
 ::home-image
+---
+textPosition: "center"
+textWidth: 10
+---
 ![Demo image](/img/demo-img.jpg)
 ::
 
@@ -37,10 +41,11 @@ Here are the latest articles.
 ---
 bg: light
 ---
-:::content-text
+:::home-text
 ---
-textWidth: 8
+textCols: 2
 textPosition: start
+textWidth: 8
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Phasellus aliquam placerat orci, nec varius magna elementum ut. Sed euismod quam vel laoreet. Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem, eget consequat magna felis a magna. Vivamus dapibus ac lectus vel ultricies. Integer in neque nisi. Suspendisse potenti. Curabitur aliquam sapien et felis commodo, a tincidunt nisl placerat. Vivamus fermentum, libero ac vestibulum dictum, lorem risus congue augue, eu vulputate neque elit at nulla. Praesent tempor arcu nec metus varius, ac condimentum velit pellentesque. Sed eget mi id libero.
 :::

@@ -101,11 +101,6 @@
     "lg:columns-2 lg:gap-20": props.textCols === 2,
   }));
 
-  const fontStyleObject = computed(() => ({
-    "prose-p:!text-sm": props.textSize === "small",
-    "prose-p:!text-2xl lg:prose-p:!text-3xl": props.textSize === "large",
-  }));
-
   const contentStyleObject = computed(() => ({
     "mb-0": props.contentMargin === "none",
     "mb-2 last:mb-0 lg:mb-2": props.contentMargin === "xs",
