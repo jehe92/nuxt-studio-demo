@@ -32,3 +32,7 @@ Latest articles
 #description
 Here are the latest articles.
 ::
+
+::section-default{bg="dark"}
+Dies ist Text in der Komponente Section default
+::
