@@ -33,6 +33,15 @@ Latest articles
 Here are the latest articles.
 ::
 
-::section-default{bg="dark"}
-Dies ist Text in der Komponente Section default
+::section-default
+---
+bg: light
+---
+:::content-text
+---
+textWidth: 8
+textPosition: start
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Phasellus aliquam placerat orci, nec varius magna elementum ut. Sed euismod quam vel laoreet. Vestibulum consequat, orci ac laoreet cursus, dolor sem luctus lorem, eget consequat magna felis a magna. Vivamus dapibus ac lectus vel ultricies. Integer in neque nisi. Suspendisse potenti. Curabitur aliquam sapien et felis commodo, a tincidunt nisl placerat. Vivamus fermentum, libero ac vestibulum dictum, lorem risus congue augue, eu vulputate neque elit at nulla. Praesent tempor arcu nec metus varius, ac condimentum velit pellentesque. Sed eget mi id libero.
+:::
 ::
