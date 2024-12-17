@@ -1,3 +1,10 @@
-# About Content v2
+::home-hero
+#headline
+Über Uns
 
-[Back home](/)
+#title
+Hier erfahren sie mehr über uns
+
+#description
+Dies ist ein kurzer Beschreibungstext über uns.
+::

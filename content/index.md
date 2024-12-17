@@ -3,7 +3,7 @@
 Subheadline
 
 #title
-This is my :br [Headline]{.text-secondary}
+Das ist meine [Überschrift]{.text-secondary}
 
 #description
 The best tools for creating and editing website content :br come from the powerful combination of Nuxt Studio and Nuxt Content.
