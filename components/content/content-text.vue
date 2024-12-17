@@ -31,11 +31,11 @@
     },
     // Width of text (in cols: 12 = 100% width)
     textWidth: {
-      type: Number,
+      type: [Number, String],
       required: false,
       default: 12,
       validator(value) {
-        return [4, 6, 8, 10, 12].includes(value);
+        return [4, 6, 8, 10, 12, "4", "6", "8", "10", "12"].includes(value);
       },
     },
     // Color of text background
@@ -84,11 +84,11 @@
   });
 
   const textStyleObject = computed(() => ({
-    "w-full lg:w-4/12": props.textWidth === 4,
-    "w-full lg:w-6/12": props.textWidth === 6,
-    "w-full lg:w-8/12": props.textWidth === 8,
-    "w-full lg:w-10/12": props.textWidth === 10,
-    "w-full": props.textWidth === 12,
+    "w-full lg:w-4/12": props.textWidth === 4 || props.textWidth === "4",
+    "w-full lg:w-6/12": props.textWidth === 6 || props.textWidth === "6",
+    "w-full lg:w-8/12": props.textWidth === 8 || props.textWidth === "8",
+    "w-full lg:w-10/12": props.textWidth === 10 || props.textWidth === "10",
+    "w-full": props.textWidth === 12 || props.textWidth === "12",
     "self-start": props.textPosition === "start",
     "self-center": props.textPosition === "center",
     "self-end": props.textPosition === "end",
